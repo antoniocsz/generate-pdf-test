@@ -1,0 +1,26 @@
+{
+  "name": "generate-pdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "tsx watch src/infra/server.ts",
+    "build": "tsup src --out-dir build",
+    "start": "node build/infra/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.27.0",
+    "pdfkit": "^0.15.0",
+    "puppeteer": "^22.6.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@types/pdfkit": "^0.13.4",
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.5"
+  }
+}
