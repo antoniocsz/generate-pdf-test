@@ -3,6 +3,12 @@ import { createPDF } from './generate-pdf'
 
 export const app = fastify()
 
+app.get('/',async (request, reply) => {
+  return reply.status(200).send({
+    message: "teste OK"
+  })
+})
+
 app.post('/api/generate-pdf',async (request, reply) => {
   const content = `
   <!DOCTYPE html>
